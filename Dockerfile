@@ -9,7 +9,7 @@ RUN mvn clean package
 #
 # Package stage
 #
-FROM openjdk:17-alpine
+FROM openjdk:19-alpine
 WORKDIR /app
 COPY --from=build /app/target/*.jar /app/app.jar
 EXPOSE 8080
