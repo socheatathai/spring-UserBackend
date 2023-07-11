@@ -1,7 +1,7 @@
 #
 # Build stage
 #
-FROM maven:3.8.3-openjdk-19 AS build
+FROM maven:4.0.0-openjdk-19 AS build
 WORKDIR /app
 COPY . /app/
 RUN mvn clean package
